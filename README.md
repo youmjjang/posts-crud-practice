@@ -81,3 +81,16 @@ python app.py
 - 삭제 확인/처리: `GET, POST /board/<post_id>/delete`
 
 작성·수정 입력은 서버에서 `strip()` 후 공통 검사한다. 잘못된 입력은 400, 없는 게시글은 404, 저장·수정·삭제 성공 후 이동은 303을 사용한다.
+
+
+## Git 작업 이력
+
+이 프로젝트는 Git으로 구현과 구조 변경을 커밋했다. 대표 커밋 메시지는 다음과 같다.
+
+- `Add modular posts CRUD implementation`
+- `Add board templates and styles`
+- `Preserve SQL setup and practice files`
+- `Preserve monitoring service`
+- `Document setup and CRUD routes`
+
+커밋 SHA와 작업별 설명은 루트의 [GIT_HISTORY.md](./GIT_HISTORY.md)에 정리했다. GitHub의 Commits 화면에서도 실제 커밋 이력을 확인할 수 있다.
