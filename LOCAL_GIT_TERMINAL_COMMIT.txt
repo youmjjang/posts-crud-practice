@@ -1,0 +1,4 @@
+Local Git terminal commit verification
+This file was created with git add, git commit, and git push from Windows terminal.
+Repository: youmjjang/posts-crud-practice
+Assignment: SKT ALEPH posts CRUD
