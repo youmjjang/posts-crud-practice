@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>새 게시글 작성 | mini-watch</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="container narrow">
+        <h1>새 게시글 작성</h1>
+        {% if error %}
+        <p class="error" role="alert">{{ error }}</p>
+        {% endif %}
+
+        <form class="card form-card" action="{{ url_for('posts.new_post') }}" method="post">
+            <label for="title">제목</label>
+            <input id="title" name="title" value="{{ title }}" autocomplete="off">
+
+            <label for="body">내용</label>
+            <textarea id="body" name="body" rows="8">{{ body }}</textarea>
+
+            <div class="actions">
+                <button class="button" type="submit">저장하기</button>
+                <a class="button secondary" href="{{ url_for('posts.index') }}">취소</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
